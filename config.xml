@@ -24,6 +24,4 @@
     </platform>
     <engine name="android" spec="^6.2.3" />
     <engine name="ios" spec="^4.4.0" />
-    <plugin name="com.gizwits.cordova.wifi" spec="/Users/gzbigegg/Documents/workspace/gizwits/xb_group/GizWifiCordovaSDK" />
-    <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
 </widget>
