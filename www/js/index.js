@@ -24,7 +24,7 @@ var app = {
     
     startAndLogin: function() {
       var phone = "REPLACE_WITH_YOUR_PHONE_NUMBER";
-      var password = "123456";
+      var password = "111111";
       var email = "yliu@gizwits.com"
       
       cordova.plugins.GizWifiCordovaSDK.startWithAppID({
@@ -112,6 +112,53 @@ var app = {
         alert("SDK failed to start: " + JSON.stringify(error));
       });
     },
+    
+    changeUserPassword: function() {
+      var token = "8a49f6f15e0c4e82863b04ab764d0c4b";
+      var uid = "a64bfd3605f440d497eada93044e6520";
+      
+      cordova.plugins.GizWifiCordovaSDK.changeUserPassword(
+        {"token": token, "oldPassword": "123456", "newPassword": "111111"},
+        function(data) {
+          alert("Password changed: " + JSON.stringify(data));
+        },
+        function(error) {
+          alert("Failed to change password: " + JSON.stringify(error));
+        }
+      );
+    },
+    
+    resetPasswordByEmail: function() {
+      var email = "yliu@gizwits.com";
+      
+      var GizUserNormal	= 0; // 普通用户
+      var GizUserPhone	= 1; // 手机用户
+      var GizUserEmail	= 2; // 邮箱用户
+      
+      cordova.plugins.GizWifiCordovaSDK.resetPassword(
+        {"userName": email, "verifyCode": "", "newPassword": "", "accountType": GizUserEmail},
+        function(data) {
+          alert("Password reset: " + JSON.stringify(data));
+        },
+        function(error) {
+          alert("Failed to reset password: " + JSON.stringify(error));
+        }
+      );
+    },
+    
+    getUserInfo: function() {
+      var token = "8a49f6f15e0c4e82863b04ab764d0c4b";
+      
+      cordova.plugins.GizWifiCordovaSDK.getUserInfo(
+        {"token": token},
+        function(data) {
+          alert("User Info: " + JSON.stringify(data));
+        },
+        function(error) {
+          alert("Failed to get user info: " + JSON.stringify(error));
+        }
+      );
+    },
 
     // deviceready Event Handler
     //
@@ -138,6 +185,18 @@ var app = {
         
         // This one to register a user with email
         // this.startAndRegisterUserByEmail();
+        
+        // This one is to change user password, it depends on startAndLogin()
+        // this.changeUserPassword();
+        
+        // This is to reset password by email
+        // FIXME: This one didn't pass the test
+        // this.resetPasswordByEmail();
+        
+        // This is to test getUserInfo
+        this.getUserInfo();
+        
+        
     },
 
     // Update DOM on a Received Event

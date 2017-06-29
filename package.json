@@ -12,10 +12,13 @@
     "dependencies": {
         "GizWifiCordovaSDK": "file:///Users/gzbigegg/Documents/workspace/gizwits/xb_group/GizWifiCordovaSDK",
         "cordova-android": "^6.2.3",
-        "cordova-ios": "^4.4.0"
+        "cordova-ios": "^4.4.0",
+        "com.gizwits.cordova.wifi": "../GizWifiCordovaSDK"
     },
     "cordova": {
-        "plugins": {},
+        "plugins": {
+            "com.gizwits.cordova.wifi": {}
+        },
         "platforms": [
             "android",
             "ios"
