@@ -129,7 +129,7 @@ var app = {
     },
     
     resetPasswordByEmail: function() {
-      var email = "yliu@gizwits.com";
+      var email = "REPLACE_WITH_YOUR_EMAIL";
       
       var GizUserNormal	= 0; // 普通用户
       var GizUserPhone	= 1; // 手机用户
@@ -156,6 +156,77 @@ var app = {
         },
         function(error) {
           alert("Failed to get user info: " + JSON.stringify(error));
+        }
+      );
+    },
+    
+    changeUserInfo: function() {
+      var token = "8a49f6f15e0c4e82863b04ab764d0c4b";
+      
+    /**
+     Male      = 0
+     Female    = 1
+     Unknown    = 2
+     */
+      
+      var GizUserNormal	= 0; // 普通用户
+      var GizUserPhone	= 1; // 手机用户
+      var GizUserEmail	= 2; // 邮箱用户
+      
+      cordova.plugins.GizWifiCordovaSDK.changeUserInfo(
+        {
+          "token": token,
+          "username": "xxxxxx",
+          "additionalInfo": {"name": "test", "gender": 0, "birthday": "1990-01-01", "address": "test addr", "remark": "test remark"},
+          "accountType": GizUserEmail
+        },
+        function(data) {
+          alert("Changed user info: " + JSON.stringify(data));
+        },
+        function(error) {
+          alert("Failed to change user info: " + JSON.stringify(error));
+        }
+      );
+    },
+    
+    setDeviceOnboarding: function() {
+      var GizWifiSoftAP = 0;
+      var GizWifiAirLink = 1;
+      var GizGAgentESP = 4;
+      var GizGAgentHF = 1;
+      
+      cordova.plugins.GizWifiCordovaSDK.setDeviceOnboarding(
+        {
+          "ssid": "Gizwits",
+          "key": "gizwits#1108",
+          "mode": GizWifiAirLink,
+          "softAPSSIDPrefix": "",
+          "timeout": 60,
+          "gagentTypes": [GizGAgentHF]
+        },
+        function(data) {
+          alert("AirLink succeeded: " + JSON.stringify(data));
+        },
+        function(error) {
+          alert("Failed to configure AirLink: " + JSON.stringify(error));
+        }
+      );
+    },
+    
+    getBoundDevices: function() {
+      var token = "8a49f6f15e0c4e82863b04ab764d0c4b";
+      var uid = "a64bfd3605f440d497eada93044e6520";
+      
+      cordova.plugins.GizWifiCordovaSDK.getBoundDevices(
+        {
+          "uid": uid,
+          "token": token
+        },
+        function(data) {
+          alert("Got bound devices: " + JSON.stringify(data));
+        },
+        function(error) {
+          alert("Failed to get bound devices: " + JSON.stringify(error));
         }
       );
     },
@@ -194,7 +265,16 @@ var app = {
         // this.resetPasswordByEmail();
         
         // This is to test getUserInfo
-        this.getUserInfo();
+        // this.getUserInfo();
+        
+        // This is to change user info
+        // this.changeUserInfo();
+        
+        // This is for AirLink configuration
+        this.setDeviceOnboarding();
+        
+        // This is for getBoundDevices
+        // this.getBoundDevices();
         
         
     },
