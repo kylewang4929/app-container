@@ -197,8 +197,8 @@ var app = {
       
       cordova.plugins.GizWifiCordovaSDK.setDeviceOnboarding(
         {
-          "ssid": "Gizwits",
-          "key": "gizwits#1108",
+          "ssid": "REPLACE_WITH_YOUR_SSID",
+          "key": "REPLACE_WITH_YOUR_PASSWORD",
           "mode": GizWifiAirLink,
           "softAPSSIDPrefix": "",
           "timeout": 60,
@@ -209,6 +209,29 @@ var app = {
         },
         function(error) {
           alert("Failed to configure AirLink: " + JSON.stringify(error));
+        }
+      );
+    },
+    
+    setDeviceOnboardingSoftAP: function() {
+      var GizWifiSoftAP = 0;
+      var GizWifiAirLink = 1;
+      var GizGAgentESP = 4;
+      var GizGAgentHF = 1;
+      
+      cordova.plugins.GizWifiCordovaSDK.setDeviceOnboarding(
+        {
+          "ssid": "REPLACE_WITH_YOUR_SSID",
+          "key": "REPLACE_WITH_YOUR_PASSWORD",
+          "mode": GizWifiSoftAP,
+          "softAPSSIDPrefix": "XPG-GAgent-",
+          "timeout": 60
+        },
+        function(data) {
+          alert("SoftAP succeeded: " + JSON.stringify(data));
+        },
+        function(error) {
+          alert("Failed to configure SoftAP: " + JSON.stringify(error));
         }
       );
     },
@@ -271,10 +294,15 @@ var app = {
         // this.changeUserInfo();
         
         // This is for AirLink configuration
-        this.setDeviceOnboarding();
+        // this.setDeviceOnboarding();
+        
+        // This is for SoftAP configuration
+        // FIXME: This yields a weird error: NOT_IN_SOFTAPMODE - 8312
+        // Probably the starting mode was not right.
+        // this.setDeviceOnboardingSoftAP();
         
         // This is for getBoundDevices
-        // this.getBoundDevices();
+        this.getBoundDevices();
         
         
     },
