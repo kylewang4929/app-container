@@ -10,10 +10,10 @@
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
     "dependencies": {
-        "GizWifiCordovaSDK": "file:///Users/gzbigegg/Documents/workspace/gizwits/xb_group/GizWifiCordovaSDK",
+        "GizWifiCordovaSDK": "file:///Users/kylewang/Documents/project/GizWifiCordovaSDK",
         "cordova-android": "^6.2.3",
         "cordova-ios": "^4.4.0",
-        "com.gizwits.cordova.wifi": "../GizWifiCordovaSDK"
+        "com.gizwits.cordova.wifi": "/Users/kylewang/Documents/project/GizWifiCordovaSDK"
     },
     "cordova": {
         "plugins": {

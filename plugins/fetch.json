@@ -10,7 +10,7 @@
     "com.gizwits.cordova.wifi": {
         "source": {
             "type": "local",
-            "path": "/Users/gzbigegg/Documents/workspace/gizwits/xb_group/CordovaTestApp/node_modules/GizWifiCordovaSDK"
+            "path": "/Users/kylewang/Documents/project/superAppCordova/node_modules/GizWifiCordovaSDK"
         },
         "is_top_level": true,
         "variables": {}
