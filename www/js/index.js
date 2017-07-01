@@ -197,12 +197,12 @@ var app = {
       
       cordova.plugins.GizWifiCordovaSDK.setDeviceOnboarding(
         {
-          "ssid": "REPLACE_WITH_YOUR_SSID",
-          "key": "REPLACE_WITH_YOUR_PASSWORD",
+          "ssid": "iPhone",
+          "key": "go4xpggo4xpg",
           "mode": GizWifiAirLink,
           "softAPSSIDPrefix": "",
           "timeout": 60,
-          "gagentTypes": [GizGAgentHF]
+          "gagentTypes": [GizGAgentESP]
         },
         function(data) {
           alert("AirLink succeeded: " + JSON.stringify(data));
@@ -246,12 +246,61 @@ var app = {
           "token": token
         },
         function(data) {
-          alert("Got bound devices: " + JSON.stringify(data));
+          alert("Got bound devices.");
+          for (var i = 0; i < data.devices.length; i++) {
+            var device = data.devices[i];
+            alert("Device: " + JSON.stringify(device));
+          }
         },
         function(error) {
           alert("Failed to get bound devices: " + JSON.stringify(error));
         }
       );
+    },
+    
+    bindRemoteDevice: function() {
+      var token = "8a49f6f15e0c4e82863b04ab764d0c4b";
+      var uid = "a64bfd3605f440d497eada93044e6520";
+      var mac = "600194108853";
+      var pk = "6f3074fe43894547a4f1314bd7e3ae0b";
+      var psecret = "2bc266b3d40c4229ac48117bc786c242";
+      var did = "SzjTu2W9TTGo4FK9vnfKCZ";
+      
+      cordova.plugins.GizWifiCordovaSDK.bindRemoteDevice(
+        {
+          "uid": uid,
+          "token": token,
+          "mac": mac,
+          "productKey": pk,
+          "productSecret": psecret
+        },
+        function(data) {
+          alert("Binding succeeded: " + JSON.stringify(data));
+        },
+        function(error) {
+          alert("Error binding: " + JSON.stringify(error));
+        }
+      );
+    },
+    
+    unbindDevice: function() {
+      var token = "8a49f6f15e0c4e82863b04ab764d0c4b";
+      var uid = "a64bfd3605f440d497eada93044e6520";
+      var did = "SzjTu2W9TTGo4FK9vnfKCZ";
+      
+      cordova.plugins.GizWifiCordovaSDK.unbindDevice(
+        {
+          "uid": uid,
+          "token": token,
+          "did": did
+        },
+        function(data) {
+          alert("Unbinding succeeded: " + JSON.stringify(data));
+        },
+        function(error) {
+          alert("Error unbinding: " + JSON.stringify(error));
+        }
+      )
     },
 
     // deviceready Event Handler
@@ -302,9 +351,13 @@ var app = {
         // this.setDeviceOnboardingSoftAP();
         
         // This is for getBoundDevices
-        this.getBoundDevices();
+        // this.getBoundDevices();
         
+        // This is to bind a device
+        this.bindRemoteDevice();
         
+        // This is to unbind a bound device
+        // this.unbindDevice();
     },
 
     // Update DOM on a Received Event
