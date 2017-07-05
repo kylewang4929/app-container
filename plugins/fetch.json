@@ -10,7 +10,7 @@
     "com.pylonproducts.wifiwizard": {
         "source": {
             "type": "registry",
-            "id": "wifiwizard"
+            "id": "com.pylonproducts.wifiwizard@~0.2.11"
         },
         "is_top_level": true,
         "variables": {}
@@ -26,7 +26,7 @@
     "cordova.custom.plugins.exitapp": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-exitapp"
+            "id": "cordova-plugin-exitapp@^1.0.0"
         },
         "is_top_level": true,
         "variables": {}

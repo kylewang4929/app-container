@@ -1,0 +1,85 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/Users/kylewang/Documents/project/GizWifiCordovaSDK",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/Users/kylewang/Documents/project/GizWifiCordovaSDK",
+        "spec": "/Users/kylewang/Documents/project/GizWifiCordovaSDK",
+        "type": "directory"
+      },
+      "/Users/kylewang/Documents/project/superAppCordova/node_modules"
+    ]
+  ],
+  "_from": "../GizWifiCordovaSDK",
+  "_id": "GizWifiCordovaSDK@0.1.0",
+  "_inCache": true,
+  "_location": "/GizWifiCordovaSDK",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/Users/kylewang/Documents/project/GizWifiCordovaSDK",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/Users/kylewang/Documents/project/GizWifiCordovaSDK",
+    "spec": "/Users/kylewang/Documents/project/GizWifiCordovaSDK",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:../GizWifiCordovaSDK",
+  "_shasum": "fd7485423002bfb10ba5e1b2a6d7de1d287ef8be",
+  "_shrinkwrap": null,
+  "_spec": "/Users/kylewang/Documents/project/GizWifiCordovaSDK",
+  "_where": "/Users/kylewang/Documents/project/superAppCordova/node_modules",
+  "author": {
+    "name": "Gizwits Inc."
+  },
+  "cordova": {
+    "id": "GizWifiCordovaSDK",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Gizwits Wi-Fi SDK Cordova Plugin",
+  "devDependencies": {
+    "dmd-plugin-cordova-plugin": "^0.1.0",
+    "husky": "^0.10.1",
+    "jsdoc-to-markdown": "^1.2.0",
+    "jshint": "^2.6.0"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "gitHead": "4ab756fc7327c259bf8542eca365d87b72edd960",
+  "keywords": [
+    "cordova",
+    "gizwits"
+  ],
+  "license": "GPL",
+  "name": "GizWifiCordovaSDK",
+  "optionalDependencies": {},
+  "readme": "# What's this?\n\nA Cordova wrapper of Gizwits Wi-Fi SDK.\n\n# How to integrate with project?\n\n1. Checkout the code in parallel to your project\n\n  If you have a project in folder '~/workspace/MyApp', checkout this project at '~/workspace/GizWifiCordovaSDK'.\n\n2. Run the following command to add the plugin\n\n  ```\n  cd ~/workspace/MyApp\n  cordova plugin add ../GizWifiCordovaSDK\n  ```\n\n# How to call API?\n\nA typical usage would be:\n\n```\n  cordova.plugins.GizWifiCordovaSDK.getVersion(function(version) {\n    alert(\"Version: \" + JSON.stringify(version));\n  }, function(error) {\n    alert(\"Error getting version: \" + JSON.stringify(error));\n  });\n```\n\n# Caveats\n\n1. You need to remove the plugin and add it back again every time you change the plugin itself. Let me know if you have any better idea!\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.gizwits.com:xb/GizWifiCordovaSDK.git"
+  },
+  "scripts": {
+    "gen-docs": "jsdoc2md --template \"jsdoc2md/TEMPLATE.md\" \"www/**/*.js\" --plugin \"dmd-plugin-cordova-plugin\" > README.md",
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
+    "precommit": "npm run gen-docs && git add README.md",
+    "test": "npm run jshint"
+  },
+  "version": "0.1.0"
+}
