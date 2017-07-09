@@ -11,7 +11,6 @@
     "license": "Apache-2.0",
     "dependencies": {
         "GizWifiCordovaSDK": "file:///Users/kylewang/Documents/project/GizWifiCordovaSDK",
-        "com.gizwits.cordova.wifi": "/Users/kylewang/Documents/project/GizWifiCordovaSDK",
         "com.pylonproducts.wifiwizard": "~0.2.11",
         "cordova-android": "^6.2.3",
         "cordova-ios": "^4.4.0",
@@ -23,7 +22,8 @@
         "cordova-plugin-vibration": "^2.1.5",
         "cordova.custom.plugins.exitapp": "~1.0.0",
         "ionic-plugin-keyboard": "^2.2.1",
-        "phonegap-plugin-barcodescanner": "^6.0.6"
+        "phonegap-plugin-barcodescanner": "^6.0.6",
+        "com.gizwits.cordova.wifi": "../GizWifiCordovaSDK"
     },
     "cordova": {
         "plugins": {

@@ -32,7 +32,7 @@
     "/"
   ],
   "_resolved": "file:../GizWifiCordovaSDK",
-  "_shasum": "fd7485423002bfb10ba5e1b2a6d7de1d287ef8be",
+  "_shasum": "8d3a9e963be090637b09085106a8f57103c88311",
   "_shrinkwrap": null,
   "_spec": "/Users/kylewang/Documents/project/GizWifiCordovaSDK",
   "_where": "/Users/kylewang/Documents/project/superAppCordova/node_modules",
@@ -61,7 +61,7 @@
       }
     }
   },
-  "gitHead": "4ab756fc7327c259bf8542eca365d87b72edd960",
+  "gitHead": "35750174356572a44b7fd3f3085abf1279521bba",
   "keywords": [
     "cordova",
     "gizwits"

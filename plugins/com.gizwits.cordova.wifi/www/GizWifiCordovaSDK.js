@@ -4,8 +4,8 @@ exports.startWithAppID = function(arg0, success, error) {
     exec(success, error, "GizWifiCordovaSDK", "startWithAppID", [arg0]);
 };
 
-exports.registerNotifications = function(success, error) {
-    exec(success, error, "GizWifiCordovaSDK", "registerNotifications", [null]);
+exports.registerDeviceListNotifications = function(success, error) {
+    exec(success, error, "GizWifiCordovaSDK", "registerDeviceListNotifications", [null]);
 };
 
 exports.userLogin = function(arg0, success, error) {
@@ -52,6 +52,10 @@ exports.unbindDevice = function(arg0, success, error) {
     exec(success, error, "GizWifiCordovaSDK", "unbindDevice", [arg0]);
 };
 
+exports.getVersion = function(success, error) {
+  exec(success, error, "GizWifiCordovaSDK", "getVersion", [null]);
+};
+
 exports.setSubscribe = function(arg0, success, error) {
     exec(success, error, "GizWifiDeviceModule", "setSubscribe", [arg0]);
 };
@@ -68,6 +72,6 @@ exports.setCustomInfo = function(arg0, success, error) {
     exec(success, error, "GizWifiDeviceModule", "setCustomInfo", [arg0]);
 };
 
-exports.getVersion = function(success, error) {
-  exec(success, error, "GizWifiCordovaSDK", "getVersion", [null]);
+exports.registerDeviceStatusNotifications = function(success, error) {
+    exec(success, error, "GizWifiDeviceModule", "registerDeviceStatusNotifications", [null]);
 };

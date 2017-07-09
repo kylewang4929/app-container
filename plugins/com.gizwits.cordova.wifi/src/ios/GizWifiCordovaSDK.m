@@ -123,8 +123,10 @@ cbId = nil;
     NSDictionary *cloudServiceInfo = [dict dictValueForKey:@"cloudServiceInfo" defaultValue:nil];
     NSArray *specialProductKeys = [dict arrayValueForKey:@"specialProductKeys" defaultValue:nil];
     BOOL autoSetDeviceDomain = [dict boolValueForKey:@"autoSetDeviceDomain" defaultValue:NO];
-    // _cbAppID = [dict integerValueForKey:@"cbId" defaultValue:-1];
     _cbAppID = command.callbackId;
+    for (NSString *key in specialProductKeys) {
+      NSLog(@"11111111specialProductKeys %@", key);
+    }
     GizSDKPrintCbId("startWithAppID cbId", _cbAppID);
     if (appSecret.length > 0) {
       [GizWifiSDK startWithAppID:appid appSecret:appSecret specialProductKeys:specialProductKeys cloudServiceInfo:cloudServiceInfo autoSetDeviceDomain:autoSetDeviceDomain];
@@ -135,10 +137,10 @@ cbId = nil;
     }
 }
 
-- (void)registerNotifications:(CDVInvokedUrlCommand*)command
+- (void)registerDeviceListNotifications:(CDVInvokedUrlCommand*)command
 {
     _cbNotification = command.callbackId;
-    GizSDKPrintCbId("registerNotifications cbId", _cbNotification);
+    GizSDKPrintCbId("registerDeviceListNotifications cbId", _cbNotification);
 }
 
 - (void)userLogin:(CDVInvokedUrlCommand *)command

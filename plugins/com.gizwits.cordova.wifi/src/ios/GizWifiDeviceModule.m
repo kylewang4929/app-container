@@ -45,9 +45,19 @@
 
 - (void)sendNotification:(NSDictionary *)dataDict errDict:(NSDictionary *)errDict
 {
-    GizSDKPrintCbId("cbNotification", _cbNotification);
+    GizSDKPrintCbId("22222222cbNotification", _cbNotification);
     if (_cbNotification == nil) return;
     [self sendResultEventWithCallbackId:_cbNotification dataDict:dataDict errDict:errDict doDelete:NO];
+}
+
+/**
+ * 注册事件通知
+ */
+- (void)registerDeviceStatusNotifications:(CDVInvokedUrlCommand*)command
+{
+    [self cleanupNotification];
+    _cbNotification = command.callbackId;
+    GizSDKPrintCbId("registerDeviceStatusNotifications cbId", _cbNotification);
 }
 
 #pragma mark - interfaces

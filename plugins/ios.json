@@ -7,9 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "com.gizwits.cordova.wifi": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        },
         "com.pylonproducts.wifiwizard": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
@@ -36,6 +33,9 @@
         },
         "phonegap-plugin-barcodescanner": {
             "CAMERA_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "com.gizwits.cordova.wifi": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },
