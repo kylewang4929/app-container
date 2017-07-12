@@ -1,59 +1,35 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "cordova-plugin-statusbar",
-        "scope": null,
-        "escapedName": "cordova-plugin-statusbar",
-        "name": "cordova-plugin-statusbar",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/Users/kylewang/Documents/project/superAppCordova/node_modules"
-    ]
-  ],
-  "_cnpm_publish_time": 1493685657203,
-  "_from": "cordova-plugin-statusbar@latest",
-  "_hasShrinkwrap": false,
+  "_from": "cordova-plugin-statusbar@^2.2.3",
   "_id": "cordova-plugin-statusbar@2.2.3",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-UcXgKtQzvr0LDcl3pEbrkd/uFQI=",
   "_location": "/cordova-plugin-statusbar",
-  "_nodeVersion": "6.10.1",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/cordova-plugin-statusbar-2.2.3.tgz_1493685656975_0.141719562234357"
-  },
-  "_npmUser": {
-    "name": "filmaj",
-    "email": "maj.fil@gmail.com"
-  },
-  "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "cordova-plugin-statusbar",
-    "scope": null,
-    "escapedName": "cordova-plugin-statusbar",
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-statusbar@^2.2.3",
     "name": "cordova-plugin-statusbar",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "escapedName": "cordova-plugin-statusbar",
+    "rawSpec": "^2.2.3",
+    "saveSpec": null,
+    "fetchSpec": "^2.2.3"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "http://r.cnpmjs.org/cordova-plugin-statusbar/download/cordova-plugin-statusbar-2.2.3.tgz",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-statusbar/-/cordova-plugin-statusbar-2.2.3.tgz",
   "_shasum": "51c5e02ad433bebd0b0dc977a446eb91dfee1502",
-  "_shrinkwrap": null,
-  "_spec": "cordova-plugin-statusbar",
-  "_where": "/Users/kylewang/Documents/project/superAppCordova/node_modules",
+  "_spec": "cordova-plugin-statusbar@^2.2.3",
+  "_where": "/Users/wangruibin/Documents/Project/CordovaTestApp/node_modules",
   "author": {
     "name": "Apache Software Foundation"
   },
   "bugs": {
     "url": "https://github.com/apache/cordova-plugin-statusbar/issues"
   },
+  "bundleDependencies": false,
   "cordova": {
     "id": "cordova-plugin-statusbar",
     "platforms": [
@@ -64,17 +40,10 @@
       "windows"
     ]
   },
-  "dependencies": {},
+  "deprecated": false,
   "description": "Cordova StatusBar Plugin",
   "devDependencies": {
     "jshint": "^2.6.0"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "51c5e02ad433bebd0b0dc977a446eb91dfee1502",
-    "size": 37207,
-    "noattachment": false,
-    "tarball": "http://r.cnpmjs.org/cordova-plugin-statusbar/download/cordova-plugin-statusbar-2.2.3.tgz"
   },
   "engines": {
     "cordovaDependencies": {
@@ -98,40 +67,7 @@
     "cordova-windows"
   ],
   "license": "Apache-2.0",
-  "maintainers": [
-    {
-      "name": "bowserj",
-      "email": "bowserj@apache.org"
-    },
-    {
-      "name": "csantanapr",
-      "email": "csantana23@gmail.com"
-    },
-    {
-      "name": "filmaj",
-      "email": "maj.fil@gmail.com"
-    },
-    {
-      "name": "kotikov.vladimir",
-      "email": "kotikov.vladimir@gmail.com"
-    },
-    {
-      "name": "purplecabbage",
-      "email": "purplecabbage@gmail.com"
-    },
-    {
-      "name": "shazron",
-      "email": "shazron@gmail.com"
-    },
-    {
-      "name": "stevegill",
-      "email": "stevengill97@gmail.com"
-    }
-  ],
   "name": "cordova-plugin-statusbar",
-  "optionalDependencies": {},
-  "publish_time": 1493685657203,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/apache/cordova-plugin-statusbar.git"

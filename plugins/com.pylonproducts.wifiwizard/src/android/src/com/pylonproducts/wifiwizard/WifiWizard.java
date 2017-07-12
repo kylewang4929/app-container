@@ -486,6 +486,11 @@ public class WifiWizard extends CordovaPlugin {
             callbackContext.error("SSID is empty");
             return false;
         }
+        if (Build.VERSION.SDK_INT >= 17) {
+            if (ssid.startsWith("\"") && ssid.endsWith("\"")) {
+                ssid = ssid.substring(1, ssid.length() - 1);
+            }
+        }
 
         callbackContext.success(ssid);
         return true;

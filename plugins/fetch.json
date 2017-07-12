@@ -58,7 +58,7 @@
     "cordova-plugin-statusbar": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-statusbar"
+            "id": "cordova-plugin-statusbar@^2.2.3"
         },
         "is_top_level": true,
         "variables": {}
@@ -83,6 +83,14 @@
         "source": {
             "type": "local",
             "path": "/Users/kylewang/Documents/project/superAppCordova/node_modules/GizWifiCordovaSDK"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-device": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device"
         },
         "is_top_level": true,
         "variables": {}

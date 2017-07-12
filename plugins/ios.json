@@ -7,6 +7,9 @@
         "files": {}
     },
     "installed_plugins": {
+        "com.gizwits.cordova.wifi": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
         "com.pylonproducts.wifiwizard": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
@@ -17,9 +20,6 @@
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        },
-        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
         "cordova-plugin-vibration": {
@@ -35,7 +35,10 @@
             "CAMERA_USAGE_DESCRIPTION": " ",
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
-        "com.gizwits.cordova.wifi": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },
