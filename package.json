@@ -24,7 +24,9 @@
         "cordova-plugin-vibration": "^2.1.5",
         "cordova.custom.plugins.exitapp": "~1.0.0",
         "ionic-plugin-keyboard": "^2.2.1",
-        "phonegap-plugin-barcodescanner": "^6.0.6"
+        "phonegap-plugin-barcodescanner": "^6.0.6",
+        "umeng_plugin": "file:../Umeng_Analytics_PhoneGap_SDK/SDK/umeng_plugin",
+        "Umeng": "/Users/wangruibin/Documents/Project/Umeng_Analytics_PhoneGap_SDK/SDK/umeng_plugin"
     },
     "cordova": {
         "plugins": {
@@ -40,7 +42,8 @@
                 "CAMERA_USAGE_DESCRIPTION": " "
             },
             "com.gizwits.cordova.wifi": {},
-            "cordova-plugin-device": {}
+            "cordova-plugin-device": {},
+            "Umeng": {}
         },
         "platforms": [
             "android",

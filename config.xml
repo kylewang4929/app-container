@@ -23,13 +23,17 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <allow-navigation href="prefs:*" />
+        <allow-navigation href="app-prefs:*" />
         <preference name="orientation" value="portrait" />
+        <preference name="StatusBarOverlaysWebView" value="true" />
     </platform>
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
     <engine name="android" spec="^6.2.3" />
     <engine name="ios" spec="^4.4.0" />
+    <plugin name="Umeng" spec="/Users/wangruibin/Documents/Project/Umeng_Analytics_PhoneGap_SDK/SDK/umeng_plugin" />
     <plugin name="com.gizwits.cordova.wifi" spec="../GizWifiCordovaSDK" />
     <plugin name="com.pylonproducts.wifiwizard" spec="~0.2.11" />
     <plugin name="cordova-plugin-appavailability" spec="^0.4.2" />
