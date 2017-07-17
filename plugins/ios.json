@@ -7,6 +7,9 @@
         "files": {}
     },
     "installed_plugins": {
+        "Umeng": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
         "com.gizwits.cordova.wifi": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
@@ -16,10 +19,16 @@
         "cordova-plugin-appavailability": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
         "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
         "cordova-plugin-vibration": {
@@ -33,15 +42,6 @@
         },
         "phonegap-plugin-barcodescanner": {
             "CAMERA_USAGE_DESCRIPTION": " ",
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        },
-        "Umeng": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },

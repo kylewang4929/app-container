@@ -1,0 +1,23 @@
+{
+    "CoreTelephony.framework": 3,
+    "libsqlite3.tbd": 1,
+    "libz.tbd": 2,
+    "CoreLocation.framework": 1,
+    "QuickLook.framework": 1,
+    "ImageIO.framework": 1,
+    "CoreVideo.framework": 2,
+    "CoreMedia.framework": 1,
+    "AudioToolbox.framework": 3,
+    "AVFoundation.framework": 2,
+    "MediaPlayer.framework": 1,
+    "CFNetwork.framework": 1,
+    "Foundation.framework": 1,
+    "UIKit.framework": 1,
+    "Security.framework": 1,
+    "SystemConfiguration.framework": 3,
+    "CoreData.framework": 1,
+    "MessageUI.framework": 1,
+    "libiconv.dylib": 1,
+    "QuartzCore.framework": 1,
+    "CoreImage.framework": 1
+}
