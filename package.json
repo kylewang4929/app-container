@@ -10,9 +10,7 @@
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
     "dependencies": {
-        "GizWifiCordovaSDK": "./plugins/com.gizwits.cordova.wifi",
-        "Umeng": "./plugins/Umeng",
-        "com.gizwits.cordova.wifi": "../GizWifiCordovaSDK",
+        "com.gizwits.cordova.wifi": "git+https://gitlab.gizwits.com/xb/cordova-wifisdk-plugin.git#0.5.0",
         "cordova-android": "^6.2.3",
         "cordova-ios": "^4.4.0",
         "cordova-plugin-appavailability": "^0.4.2",
@@ -23,15 +21,12 @@
         "cordova-plugin-statusbar": "^2.2.3",
         "cordova-plugin-vibration": "^2.1.5",
         "ionic-plugin-keyboard": "^2.2.1",
-        "phonegap-plugin-barcodescanner": "^6.0.6",
-        "com.pylonproducts.wifiwizard": "~0.2.11",
-        "cordova.custom.plugins.exitapp": "~1.0.0"
+        "phonegap-plugin-barcodescanner": "^6.0.7",
+        "wifiwizard": "git+https://github.com/gizwits/WifiWizard.git#2.12"
     },
     "cordova": {
         "plugins": {
-            "com.pylonproducts.wifiwizard": {},
             "cordova-plugin-network-information": {},
-            "cordova.custom.plugins.exitapp": {},
             "cordova-plugin-splashscreen": {},
             "cordova-plugin-vibration": {},
             "cordova-plugin-appavailability": {},
@@ -42,11 +37,11 @@
             },
             "com.gizwits.cordova.wifi": {},
             "cordova-plugin-device": {},
+            "com.pylonproducts.wifiwizard": {},
             "Umeng": {}
         },
         "platforms": [
-            "android",
-            "ios"
+            "android"
         ]
     }
 }
