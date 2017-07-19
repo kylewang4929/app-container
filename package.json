@@ -1,6 +1,6 @@
 {
-    "name": "helloworld",
-    "displayName": "HelloCordova",
+    "name": "XB Demo",
+    "displayName": "XB Demo",
     "version": "1.0.0",
     "description": "A sample Apache Cordova application that responds to the deviceready event.",
     "main": "index.js",
@@ -10,6 +10,10 @@
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
     "dependencies": {
+        "GizWifiCordovaSDK": "file:../GizWifiCordovaSDK",
+        "Umeng": "/Users/wangruibin/Documents/Project/Umeng_Analytics_PhoneGap_SDK/SDK/umeng_plugin",
+        "com.gizwits.cordova.wifi": "/Users/wangruibin/Documents/Project/GizWifiCordovaSDK",
+        "com.pylonproducts.wifiwizard": "https://github.com/gizwits/WifiWizard.git#2.12",
         "cordova-android": "^6.2.3",
         "cordova-ios": "^4.4.0",
         "cordova-plugin-appavailability": "^0.4.2",
@@ -21,7 +25,8 @@
         "cordova-plugin-vibration": "^2.1.5",
         "ionic-plugin-keyboard": "^2.2.1",
         "phonegap-plugin-barcodescanner": "^6.0.7",
-        "com.pylonproducts.wifiwizard": "git+https://github.com/gizwits/WifiWizard.git#2.12"
+        "umeng_plugin": "file:../Umeng_Analytics_PhoneGap_SDK/SDK/umeng_plugin",
+        "wifiwizard": "git+https://github.com/gizwits/WifiWizard.git#2.12"
     },
     "cordova": {
         "plugins": {
@@ -40,7 +45,11 @@
             "com.gizwits.cordova.wifi": {}
         },
         "platforms": [
-            "android"
+            "android",
+            "ios"
         ]
+    },
+    "devDependencies": {
+        "@ionic/cli-plugin-cordova": "1.4.1"
     }
 }
