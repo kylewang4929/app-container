@@ -10,9 +10,6 @@
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
     "dependencies": {
-        "GizWifiCordovaSDK": "file:../GizWifiCordovaSDK",
-        "Umeng": "/Users/wangruibin/Documents/Project/Umeng_Analytics_PhoneGap_SDK/SDK/umeng_plugin",
-        "com.gizwits.cordova.wifi": "/Users/wangruibin/Documents/Project/GizWifiCordovaSDK",
         "com.pylonproducts.wifiwizard": "https://github.com/gizwits/WifiWizard.git#2.12",
         "cordova-android": "^6.2.3",
         "cordova-ios": "^4.4.0",
@@ -25,7 +22,6 @@
         "cordova-plugin-vibration": "^2.1.5",
         "ionic-plugin-keyboard": "^2.2.1",
         "phonegap-plugin-barcodescanner": "^6.0.7",
-        "umeng_plugin": "file:../Umeng_Analytics_PhoneGap_SDK/SDK/umeng_plugin",
         "wifiwizard": "git+https://github.com/gizwits/WifiWizard.git#2.12"
     },
     "cordova": {
