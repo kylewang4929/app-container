@@ -36,7 +36,9 @@
                 "CAMERA_USAGE_DESCRIPTION": " "
             },
             "cordova-plugin-device": {},
-            "com.pylonproducts.wifiwizard": {}
+            "com.pylonproducts.wifiwizard": {},
+            "Umeng": {},
+            "com.gizwits.cordova.wifi": {}
         },
         "platforms": [
             "android",
