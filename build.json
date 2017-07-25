@@ -1,0 +1,29 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "./certs/cybertron-app.keystore",
+            "storePassword": "go4gizwits",
+            "alias": "cybertron-app",
+            "password" : "go4gizwits",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "./certs/cybertron-app.keystore",
+            "storePassword": "go4gizwits",
+            "alias": "cybertron-app",
+            "password" : "go4gizwits",
+            "keystoreType": ""
+        }
+    },
+    "ios": {
+        "debug": {
+            "developmentTeam": "4F4JWNAD79",
+            "packageType": "development"
+        },
+        "release": {
+            "developmentTeam": "4F4JWNAD79",
+            "codeSignIdentity": "iPhone Developer",
+            "packageType": "enterprise"
+        }
+    }
+}
