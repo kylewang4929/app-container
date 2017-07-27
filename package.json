@@ -39,8 +39,6 @@
             },
             "cordova-plugin-device": {},
             "com.pylonproducts.wifiwizard": {},
-            "Umeng": {},
-            "com.gizwits.cordova.wifi": {},
             "cordova-plugin-whitelist": {},
             "cordova-plugin-crosswalk-webview": {
                 "XWALK_VERSION": "23+",
