@@ -13,6 +13,7 @@
         "com.pylonproducts.wifiwizard": "https://github.com/gizwits/WifiWizard.git#2.12",
         "cordova-android": "^6.2.3",
         "cordova-ios": "^4.4.0",
+        "cordova-open-native-settings": "^1.4.1",
         "cordova-plugin-appavailability": "^0.4.2",
         "cordova-plugin-compat": "^1.1.0",
         "cordova-plugin-crosswalk-webview": "^2.3.0",
@@ -46,7 +47,8 @@
                 "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
                 "XWALK_MODE": "embedded",
                 "XWALK_MULTIPLEAPK": "true"
-            }
+            },
+            "cordova-open-native-settings": {}
         },
         "platforms": [
             "android",
