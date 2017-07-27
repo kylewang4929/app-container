@@ -3,4 +3,3 @@ plugins/**
 platforms/**
 package-lock.json
 www/**
-!www/README.md
