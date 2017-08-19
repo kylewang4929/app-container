@@ -20,7 +20,7 @@
         "cordova-plugin-device": "^1.1.6",
         "cordova-plugin-network-information": "^1.3.3",
         "cordova-plugin-splashscreen": "^4.0.3",
-        "cordova-plugin-statusbar": "^2.2.3",
+        "cordova-plugin-statusbar": "https://github.com/gizwits/cordova-plugin-statusbar.git#rel/2.2.5",
         "cordova-plugin-vibration": "^2.1.5",
         "cordova-plugin-whitelist": "^1.3.2",
         "ionic-plugin-keyboard": "^2.2.1",
