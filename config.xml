@@ -89,6 +89,7 @@
     <engine name="ios" spec="^4.4.0" />
     <plugin name="com.pylonproducts.wifiwizard" spec="https://github.com/gizwits/WifiWizard.git#2.14" />
     <plugin name="cordova-open-native-settings" spec="^1.4.1" />
+    <plugin name="cordova-plugin-app-version" spec="^0.1.9" />
     <plugin name="cordova-plugin-appavailability" spec="^0.4.2" />
     <plugin name="cordova-plugin-crosswalk-webview" spec="^2.3.0">
         <variable name="XWALK_VERSION" value="23+" />
