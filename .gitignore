@@ -1,4 +1,5 @@
 node_modules
+.idea/
 plugins/**
 platforms/**
 package-lock.json
