@@ -42,6 +42,8 @@
         <splash density="port-xxxhdpi" src="resources/splash/android/screen-port-xxxhdpi.png"/>
     </platform>
     <platform name="ios">
+        <config-file parent="NSCameraUsageDescription" target="*-Info.plist">
+        </config-file>
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <allow-navigation href="prefs:*" />
