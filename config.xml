@@ -43,6 +43,7 @@
     </platform>
     <platform name="ios">
         <config-file parent="NSCameraUsageDescription" target="*-Info.plist">
+            <string>We are using a camera to scan qrcode</string>
         </config-file>
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
