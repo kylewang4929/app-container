@@ -37,7 +37,7 @@
             "cordova-plugin-statusbar": {},
             "ionic-plugin-keyboard": {},
             "phonegap-plugin-barcodescanner": {
-                "CAMERA_USAGE_DESCRIPTION": " "
+                "CAMERA_USAGE_DESCRIPTION": "We are using a camera to scan QR Code"
             },
             "cordova-plugin-device": {},
             "com.pylonproducts.wifiwizard": {},
