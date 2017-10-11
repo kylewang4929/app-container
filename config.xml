@@ -42,9 +42,6 @@
         <splash density="port-xxxhdpi" src="resources/splash/android/screen-port-xxxhdpi.png"/>
     </platform>
     <platform name="ios">
-        <config-file parent="NSCameraUsageDescription" target="*-Info.plist">
-            <string>We are using a camera to scan qrcode</string>
-        </config-file>
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <allow-navigation href="prefs:*" />
@@ -52,36 +49,37 @@
         <preference name="DisallowOverscroll" value="true" />
         <preference name="orientation" value="portrait" />
         <preference name="StatusBarOverlaysWebView" value="true" />
-        <icon height="57" src="resources/icon/ios/icon.png" width="57"/>
-        <icon height="114" src="resources/icon/ios/icon@2x.png" width="114"/>
-        <icon height="40" src="resources/icon/ios/icon-40.png" width="40"/>
-        <icon height="80" src="resources/icon/ios/icon-40@2x.png" width="80"/>
-        <icon height="120" src="resources/icon/ios/icon-40@3x.png" width="120"/>
-        <icon height="50" src="resources/icon/ios/icon-50.png" width="50"/>
-        <icon height="100" src="resources/icon/ios/icon-50@2x.png" width="100"/>
-        <icon height="60" src="resources/icon/ios/icon-60.png" width="60"/>
-        <icon height="120" src="resources/icon/ios/icon-60@2x.png" width="120"/>
-        <icon height="180" src="resources/icon/ios/icon-60@3x.png" width="180"/>
-        <icon height="72" src="resources/icon/ios/icon-72.png" width="72"/>
-        <icon height="144" src="resources/icon/ios/icon-72@2x.png" width="144"/>
-        <icon height="76" src="resources/icon/ios/icon-76.png" width="76"/>
-        <icon height="152" src="resources/icon/ios/icon-76@2x.png" width="152"/>
-        <icon height="167" src="resources/icon/ios/icon-83.5@2x.png" width="167"/>
-        <icon height="29" src="resources/icon/ios/icon-small.png" width="29"/>
-        <icon height="58" src="resources/icon/ios/icon-small@2x.png" width="58"/>
-        <icon height="87" src="resources/icon/ios/icon-small@3x.png" width="87"/>
-        <splash height="1136" src="resources/splash/ios/Default-568h@2x~iphone.png" width="640"/>
-        <splash height="1334" src="resources/splash/ios/Default-667h.png" width="750"/>
-        <splash height="2208" src="resources/splash/ios/Default-736h.png" width="1242"/>
-        <splash height="1242" src="resources/splash/ios/Default-Landscape-736h.png" width="2208"/>
-        <splash height="1536" src="resources/splash/ios/Default-Landscape@2x~ipad.png" width="2048"/>
-        <splash height="2048" src="resources/splash/ios/Default-Landscape@~ipadpro.png" width="2732"/>
-        <splash height="768" src="resources/splash/ios/Default-Landscape~ipad.png" width="1024"/>
-        <splash height="2048" src="resources/splash/ios/Default-Portrait@2x~ipad.png" width="1536"/>
-        <splash height="2732" src="resources/splash/ios/Default-Portrait@~ipadpro.png" width="2048"/>
-        <splash height="1024" src="resources/splash/ios/Default-Portrait~ipad.png" width="768"/>
-        <splash height="960" src="resources/splash/ios/Default@2x~iphone.png" width="640"/>
-        <splash height="480" src="resources/splash/ios/Default~iphone.png" width="320"/>
+        <icon height="29" width="29" src="resources/icon/ios/icon-small.png"/>
+        <icon height="40" width="40" src="resources/icon/ios/icon-40.png"/>
+        <icon height="50" width="50" src="resources/icon/ios/icon-50.png"/>
+        <icon height="57" width="57" src="resources/icon/ios/icon.png"/>
+        <icon height="58" width="58" src="resources/icon/ios/icon-small@2x.png"/>
+        <icon height="60" width="60" src="resources/icon/ios/icon-60.png"/>
+        <icon height="72" width="72" src="resources/icon/ios/icon-72.png"/>
+        <icon height="76" width="76" src="resources/icon/ios/icon-76.png"/>
+        <icon height="80" width="80" src="resources/icon/ios/icon-40@2x.png"/>
+        <icon height="87" width="87" src="resources/icon/ios/icon-small@3x.png"/>
+        <icon height="100" width="100" src="resources/icon/ios/icon-50@2x.png"/>
+        <icon height="114" width="114" src="resources/icon/ios/icon@2x.png"/>
+        <icon height="120" width="120" src="resources/icon/ios/icon-40@3x.png"/>
+        <icon height="120" width="120" src="resources/icon/ios/icon-60@2x.png"/>
+        <icon height="144" width="144" src="resources/icon/ios/icon-72@2x.png"/>
+        <icon height="152" width="152" src="resources/icon/ios/icon-76@2x.png"/>
+        <icon height="167" width="167" src="resources/icon/ios/icon-83.5@2x.png"/>
+        <icon height="180" width="180" src="resources/icon/ios/icon-60@3x.png"/>
+        <icon height="1024" width="1024" src="resources/icon/ios/icon-1024.jpg" />
+        <splash height="480" width="320" src="resources/splash/ios/Default~iphone.png"/>
+        <splash height="768" width="1024" src="resources/splash/ios/Default-Landscape~ipad.png"/>
+        <splash height="960" width="640" src="resources/splash/ios/Default@2x~iphone.png"/>
+        <splash height="1024" width="768" src="resources/splash/ios/Default-Portrait~ipad.png"/>
+        <splash height="1136" width="640" src="resources/splash/ios/Default-568h@2x~iphone.png"/>
+        <splash height="1242" width="2208" src="resources/splash/ios/Default-Landscape-736h.png"/>
+        <splash height="1334" width="750" src="resources/splash/ios/Default-667h.png"/>
+        <splash height="1536" width="2048" src="resources/splash/ios/Default-Landscape@2x~ipad.png"/>
+        <splash height="2048" width="1536" src="resources/splash/ios/Default-Portrait@2x~ipad.png"/>
+        <splash height="2048" width="2732" src="resources/splash/ios/Default-Landscape@~ipadpro.png"/>
+        <splash height="2208" width="1242" src="resources/splash/ios/Default-736h.png"/>
+        <splash height="2732" width="2048" src="resources/splash/ios/Default-Portrait@~ipadpro.png"/>
     </platform>
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
@@ -94,7 +92,7 @@
     <preference name="SplashScreenDelay" value="10000" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <engine name="android" spec="^6.2.3" />
-    <engine name="ios" spec="^4.4.0" />
+    <engine name="ios" spec="~4.5.1" />
     <plugin name="com.pylonproducts.wifiwizard" spec="https://github.com/gizwits/WifiWizard.git#2.14" />
     <plugin name="cordova-open-native-settings" spec="^1.4.1" />
     <plugin name="cordova-plugin-app-version" spec="^0.1.9" />
