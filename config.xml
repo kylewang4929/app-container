@@ -117,6 +117,7 @@
         <variable name="QQ_APP_ID" value="1106328937" />
     </plugin>
     <plugin name="cordova-plugin-splashscreen" spec="4.0.3" />
+    <plugin name="cordova-plugin-statusbar" spec="git+https://github.com/gizwits/cordova-plugin-statusbar.git#rel/2.2.7" />
     <plugin name="cordova-plugin-vibration" spec="2.1.5" />
     <plugin name="cordova-plugin-wechat" spec="^2.1.0">
         <variable name="WECHATAPPID" value="wx151af7f2cd3ff605" />
@@ -126,5 +127,4 @@
     <plugin name="phonegap-plugin-barcodescanner" spec="6.0.8">
         <variable name="CAMERA_USAGE_DESCRIPTION" value="We are using a camera to scan QR Code" />
     </plugin>
-    <plugin name="cordova-plugin-statusbar" spec="https://github.com/gizwits/cordova-plugin-statusbar.git#rel/2.2.7" />
 </widget>
