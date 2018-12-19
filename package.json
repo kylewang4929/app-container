@@ -1,85 +1,74 @@
 {
-    "name": "XB Demo",
-    "displayName": "XB Demo",
-    "version": "1.0.0",
-    "description": "A sample Apache Cordova application that responds to the deviceready event.",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "XB Demo",
+  "displayName": "XB Demo",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "GizWifiCordovaSDK": "file:../GizWifiCordovaSDK",
+    "com.gizwits.cordova.wifi": "/Users/wangruibin/Documents/Project/shuwei/GizWifiCordovaSDK",
+    "com.pylonproducts.wifiwizard": "https://github.com/gizwits/WifiWizard.git#2.14",
+    "cordova-android": "^6.3.0",
+    "cordova-ios": "^4.4.0",
+    "cordova-open-native-settings": "1.4.1",
+    "cordova-plugin-app-version": "0.1.9",
+    "cordova-plugin-appavailability": "0.4.2",
+    "cordova-plugin-compat": "1.2.0",
+    "cordova-plugin-crosswalk-webview": "2.3.0",
+    "cordova-plugin-device": "1.1.6",
+    "cordova-plugin-file": "^6.0.0",
+    "cordova-plugin-http2": "^1.1.1",
+    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-keyboard": "^1.2.0",
+    "cordova-plugin-network-information": "1.3.3",
+    "cordova-plugin-splashscreen": "4.0.3",
+    "cordova-plugin-statusbar": "git+https://github.com/gizwits/cordova-plugin-statusbar.git#rel/2.2.7",
+    "cordova-plugin-vibration": "2.1.5",
+    "cordova-plugin-whitelist": "1.3.2",
+    "phonegap-plugin-barcodescanner": "6.0.8",
+    "wifiwizard": "git+https://github.com/gizwits/WifiWizard.git#2.14"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-vibration": {},
+      "cordova-plugin-appavailability": {},
+      "phonegap-plugin-barcodescanner": {
+        "CAMERA_USAGE_DESCRIPTION": "We are using a camera to scan QR Code"
+      },
+      "cordova-plugin-device": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-open-native-settings": {},
+      "cordova-plugin-app-version": {},
+      "cordova-plugin-crosswalk-webview": {
+        "XWALK_VERSION": "23+",
+        "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+        "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+        "XWALK_MODE": "embedded",
+        "XWALK_MULTIPLEAPK": "true"
+      },
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-http2": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-statusbar": {},
+      "com.pylonproducts.wifiwizard": {},
+      "com.gizwits.cordova.wifi": {},
+      "cordova-plugin-keyboard": {}
     },
-    "author": "Apache Cordova Team",
-    "license": "Apache-2.0",
-    "dependencies": {
-        "GizWifiCordovaSDK": "file:../GizWifiCordovaSDK",
-        "Umeng": "/Users/wangruibin/Documents/Project/lizheng/Umeng_Analytics_PhoneGap_SDK/SDK/umeng_plugin",
-        "com.gizwits.cordova.wifi": "/Users/wangruibin/Documents/Project/jujing/GizWifiCordovaSDK",
-        "com.pylonproducts.wifiwizard": "https://github.com/gizwits/WifiWizard.git#2.14",
-        "cordova-android": "^6.4.0",
-        "cordova-ios": "^4.4.0",
-        "cordova-open-native-settings": "1.4.1",
-        "cordova-plugin-app-version": "0.1.9",
-        "cordova-plugin-appavailability": "0.4.2",
-        "cordova-plugin-compat": "1.2.0",
-        "cordova-plugin-crosswalk-webview": "2.3.0",
-        "cordova-plugin-device": "1.1.6",
-        "cordova-plugin-file": "^6.0.0",
-        "cordova-plugin-http2": "^1.1.1",
-        "cordova-plugin-ionic-webview": "^1.1.16",
-        "cordova-plugin-network-information": "1.3.3",
-        "cordova-plugin-qqsdk": "^0.9.6",
-        "cordova-plugin-splashscreen": "4.0.3",
-        "cordova-plugin-statusbar": "git+https://github.com/gizwits/cordova-plugin-statusbar.git#rel/2.2.7",
-        "cordova-plugin-vibration": "2.1.5",
-        "cordova-plugin-wechat": "^2.1.0",
-        "cordova-plugin-whitelist": "1.3.2",
-        "ionic-plugin-keyboard": "2.2.1",
-        "phonegap-plugin-barcodescanner": "6.0.8",
-        "umeng_plugin": "file:../Umeng_Analytics_PhoneGap_SDK/SDK/umeng_plugin",
-        "wifiwizard": "git+https://github.com/gizwits/WifiWizard.git#2.14"
-    },
-    "cordova": {
-        "plugins": {
-            "cordova-plugin-network-information": {},
-            "cordova-plugin-splashscreen": {},
-            "cordova-plugin-vibration": {},
-            "cordova-plugin-appavailability": {},
-            "ionic-plugin-keyboard": {},
-            "phonegap-plugin-barcodescanner": {
-                "CAMERA_USAGE_DESCRIPTION": "We are using a camera to scan QR Code"
-            },
-            "cordova-plugin-device": {},
-            "com.pylonproducts.wifiwizard": {},
-            "cordova-plugin-whitelist": {},
-            "cordova-open-native-settings": {},
-            "cordova-plugin-app-version": {},
-            "Umeng": {},
-            "cordova-plugin-crosswalk-webview": {
-                "XWALK_VERSION": "23+",
-                "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
-                "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
-                "XWALK_MODE": "embedded",
-                "XWALK_MULTIPLEAPK": "true"
-            },
-            "cordova-plugin-ionic-webview": {},
-            "cordova-plugin-wechat": {
-                "WECHATAPPID": "wx151af7f2cd3ff605"
-            },
-            "cordova-plugin-qqsdk": {
-                "QQ_APP_ID": "1106328937"
-            },
-            "cordova-plugin-http2": {},
-            "cordova-plugin-file": {},
-            "com.gizwits.cordova.wifi": {},
-            "cordova-plugin-statusbar": {}
-        },
-        "platforms": [
-            "android",
-            "ios"
-        ]
-    },
-    "devDependencies": {
-        "@ionic/cli-plugin-cordova": "1.4.1",
-        "@ionic/cli-plugin-ionic1": "2.1.1",
-        "ionic": "3.7.0"
-    }
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "devDependencies": {
+    "@ionic/cli-plugin-cordova": "1.4.1",
+    "@ionic/cli-plugin-ionic1": "2.1.1",
+    "ionic": "3.7.0"
+  }
 }
